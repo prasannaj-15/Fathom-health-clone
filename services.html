@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/servicespage.css">
+    <link rel="stylesheet" href="./Style/navbar_style.css">
+    <title>services</title>
+</head>
+<body>
+    <div id="navbar_container"></div>
+    <div class="container">
+        <div class="header_container">
+            <div class="section_title">
+                <h1 class="heading">
+                    Medical coding automation services built for you
+                </h1>
+                <div class="heading_subtitle">Fathom's AI seamlessly integrates into your workflow</div>
+                <a href="" class="button heading_button">GET STARTED</a>
+            </div>
+        </div>
+    </div>
+    <div class="section_highlight">
+        <div class="highlight">
+            <div class="highlight_heading">
+                <div class="subheader_highlight">
+                    Read 
+                    <a href="https://www.nvidia.com/en-us/">NVIDIA</a>'s spotlight on Fathom: 
+                    <a href="https://blogs.nvidia.com/blog/2019/09/12/fathom-ai-medical-coding/" target="_blank">The Cure for the Common Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Coding automation section -->
+    <div class="section_coding_auto section">
+        <div class="coding_grid">
+            <div>
+                <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8a616cf99d7caf1875c8a0_automation.svg" alt="">
+            </div>
+            <div class="grid_info">
+                <h6 class="label_header">AI-DRIVEN EFFICIENCY</h6>
+                <h3 class="large_heading">Coding automation</h3>
+                <h6 class="subheader">Let us take a first pass</h6>
+                <p class="para_text">
+                    Use our AI to ease the burden on your coding team. In one quick step, we can review your incoming charts, process the charts that can be coded by our system and then pass the remainder to your current coding operation, allowing them to focus on the most critical charts while drastically reducing your overall coding costs.
+                </p>
+                <a href="" class="button button_outline">REQUEST A CALL</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- full service coding -->
+    <div class="section_coding_auto section" id="full_service_coding">
+        <div class="coding_grid reverse">
+            <div class="grid_info">
+                <h6 class="label_header">MITIGATE RISK</h6>
+                <h3 class="large_heading">Audit complete</h3>
+                <h6 class="subheader">The world’s first comprehensive, real-time coding audit</h6>
+                <p class="para_text">
+                    Use AI to check your coder or coding vendor’s work to ensure completion and accuracy. Our system looks at every coded chart and flags any that may represent a potential denial or unnecessary downcoding.
+                </p>
+                <a href="" class="button button_outline">REQUEST A CALL</a>
+            </div>
+            <div>
+                <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8a617bacdbb51df33f6af8_full-service.svg" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Audit complete section -->
+    <div class="section_coding_auto section">
+        <div class="coding_grid">
+            <div>
+                <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8a6195a6b2c14cbeaa56fb_audit.svg" alt="" />
+            </div>
+            <div class="grid_info">
+                <h6 class="label_header">MITIGATE RISK</h6>
+                <h3 class="large_heading">Audit complete</h3>
+                <h6 class="subheader">The world’s first comprehensive, real-time coding audit</h6>
+                <p class="para_text">
+                    Use AI to check your coder or coding vendor’s work to ensure completion and accuracy. Our system looks at every coded chart and flags any that may represent a potential denial or unnecessary downcoding.
+                </p>
+                <a href="" class="button button_outline">REQUEST A CALL</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <div id="footerfun_section"></div>
+</body>
+</html>
+<script type="module">
+    import  {navbarfun, footerfun}  from './component/navbar.js';
+    // console.log(navbarfun);
+    let nav_container = document.getElementById('navbar_container');
+    nav_container.innerHTML = navbarfun();
+    let footerfun_section = document.getElementById('footerfun_section');
+    footerfun_section.innerHTML = footerfun();  
+</script>
