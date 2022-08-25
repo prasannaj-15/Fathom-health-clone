@@ -42,6 +42,9 @@ a{
     text-align: center;
     margin: auto;
 }
+.meetings-iframe-container{
+    margin-top: 60px;
+}
 
 @media (max-width: 768px) {
     .header_container{
