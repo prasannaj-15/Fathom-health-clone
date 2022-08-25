@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/schedulepage.css">
+    <link rel="stylesheet" href="./Style/navbar_style.css">
+    <title>Schedule</title>
+</head>
+<body>
+    <div id="navbar_container"></div>
+    <div class="container">
+        <div class="header_container">
+            <div class="section_title">
+                <h1 class="heading">
+                    Schedule a consultation
+                </h1>
+                <div class="heading_subtitle">Use the form below to book a quick call to see what Fathom can do for your coding operations.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Schedule -->
+    <div class="schedule_section">
+        <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/andrew721/10-minute-consult-with-fathom?embed=true"></div>
+    </div>
+
+      <!-- footer section -->
+      <div id="footerfun_section"></div>
+</body>
+</html>
+<script type="module">
+    import  {navbarfun, footerfun}  from './component/navbar.js';
+    // console.log(navbarfun);
+    let nav_container = document.getElementById('navbar_container');
+    nav_container.innerHTML = navbarfun();
+    let footerfun_section = document.getElementById('footerfun_section');
+    footerfun_section.innerHTML = footerfun();  
+</script>
+<script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+  
+
