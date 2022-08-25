@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container{
+width:100%;
+/* border:2px solid black; */
+background-color:rgb(242,245,250);
+}
+#header {
+  width: 100%;
+  margin: 0px;
+  margin-top: 60px;
+  padding-top: 60px;
+  background-image: url(https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8115255836db2cd3bfd6b2_background.jpg);
+  height: 533.59px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /* border:3px solid black; */
+}
+#title {
+  width: 80%;
+  margin: auto;
+  padding-top: 0px;
+  text-align: center;
+}
+#title > h1 {
+  margin: auto;
+  font-size: 80px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 100;
+  position: relative;
+}
+#title > p {
+  width: 65%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 37px;
+}
+#header-design{
+display: flex;
+justify-content: space-between;
+}
+#header-design>div:nth-child(2){
+position: absolute;
+top:90%;
+left:80%;
+}
+.mid-header {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  /* border: 2px solid red; */
+  position: relative;
+
+}
+.mid-header > div {
+  width: 30%;
+}
+.mid-header > div:first-child > img {
+  width: 100%;
+}
+
+#middle-bar {
+  width: 95%;
+  margin: auto;
+  color: #6f8093;
+  font-size: 20px;
+  text-align: center;
+  padding: 23px 23px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-left: 100px;
+}
+
+#bottom-button {
+  width: 210px;
+  margin: auto;
+  margin-top: 60px;
+  border: 3px solid #9a76d0;
+  background-color: transparent;
+  box-shadow: none;
+  color: #9a76d0;
+  line-height: 22px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 40px;
+  padding: 14px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+#bottom-update{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  /* border:2px solid blue; */
+  padding:100px;
+  margin-top:10%;
+  background-color: rgb(255,255,255);
+  gap:10%;
+}
+#bottom-update>div{
+  width:100%;
+  /* border:2px solid red; */
+}
+
+
+#bottom-update>div>input{
+  border-radius:20px;
+  width:50%;
+  text-align: center;
+  
+}
+
+#bottom-update>div>button{
+
+background-color:rgb(145,107,201);
+border-radius:10px;
+
+}
+
+
+#absolute-container{
+  position: absolute;
+  left:92%;
+  top:100%;
+  width:20px;
+  height:20px;
+  padding:30px;
+  background-color:rgb(145,107,201);
+  border-radius:40px;
+}
+
+.message-box{
+  position: fixed;
+  
+} 
