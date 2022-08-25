@@ -5,7 +5,6 @@
 #header {
   width: 100%;
   margin: auto;
-  margin-top: 60px;
   background-image: url(https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8115255836db2cd3bfd6b2_background.jpg);
   height: 533.59px;
   display: grid;
@@ -137,7 +136,8 @@ body > img {
   text-align: center;
   font-weight: normal;
 }
-#middle_button {
+#middle_button,
+#last_button {
   width: 210px;
   margin: auto;
   margin-top: 60px;
@@ -165,7 +165,8 @@ body > img {
   padding-top: 80px;
   text-align: center;
 }
-#animated > h1 {
+#animated > h1,
+#last > h1 {
   color: #293240;
   font-size: 50px;
   line-height: 125%;
@@ -230,11 +231,29 @@ body > img {
   color: #293240;
   font-size: 50px;
 }
-#benefits h2 {
+#benefits h2,
+#last > h2 {
   display: block;
   color: #6f8093;
   font-size: 28px;
   font-weight: 100;
+}
+#lastdiv {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 50% 15% 15%;
+  gap: 60px;
+  margin-left: 90px;
+  margin-bottom: 110px;
+}
+#lastdiv > h1 {
+  border: 1px #293240;
+  color: #293240;
+  font-size: 40px;
+  line-height: 125%;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 0.01em;
 }
 
 /* Medium screens and small screen */
@@ -249,13 +268,127 @@ body > img {
     grid-template-columns: repeat(1, 1fr);
     justify-content: space-around;
   }
+  #main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+  }
   body > img {
     width: 0px;
   }
   #header {
     height: 1000px;
   }
+  #last > div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #lastdiv {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .submain {
   margin-bottom: 100px;
 }
+#last_button {
+  margin-top: -60px;
+  font-size: 12px;
+  font-weight: 100;
+}
+#last {
+  background-color: #f3f5fb;
+  width: 100%;
+  margin: auto;
+  margin-top: 80px;
+  padding-top: 80px;
+  text-align: center;
+}
+#last > img {
+  position: relative;
+  top: -100px;
+  right: -550px;
+  transform: rotate(180deg);
+}
+
+#blogcontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  gap: 40px;
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
+  background-color: #fff;
+}
+#blogcontainer > div {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  cursor: pointer;
+}
+#blogcontainer > div > img {
+  width: 100%;
+  height: 200px;
+}
+#blogcontainer > div > h6 {
+  color: rgb(111, 128, 147);
+  margin-bottom: 10px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #6f8093;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+#blogcontainer > div > h1 {
+  margin-bottom: 14px;
+  clear: none;
+  font-family: Barlow, sans-serif;
+  color: #293240;
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 900;
+  width: 80%;
+  text-align: left;
+  margin-left: 20px;
+}
+#blogcontainer > div > p {
+  overflow: visible;
+  max-width: 95%;
+  color: #6f8093;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: normal;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+#lastdiv > button {
+  width: 200px;
+  margin: auto;
+
+  border: 3px solid #9a76d0;
+  background-color: transparent;
+  box-shadow: none;
+  color: #9a76d0;
+  line-height: 22px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 40px;
+  padding: 14px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+#lastdiv > button:last-child {
+  background-color: #9a76d0;
+  color: white;
+}
+/* extra */
