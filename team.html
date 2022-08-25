@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Team-page</title>
     <link rel="stylesheet" href="./Style/team.css">
+    <link rel="stylesheet" href="./Style/navbar_style.css">
     
 </head>
 <body>
     <!-- header section -->
-    <div class="navbar"></div>
-    
+    <div id="navbar_container"></div>
     <!-- Top banner section -->
 
     <div class="section hero wf-section">
@@ -179,7 +179,15 @@
     </div>
 
     <!-- footer section -->
-    <div class="footer"></div>
+    <div id="footerfun_section"></div>
 </body>
 </html>
 <script src="./Scripts/team.js"></script>
+<script type="module">
+    import  {navbarfun, footerfun}  from './component/navbar.js';
+    // console.log(navbarfun);
+    let nav_container = document.getElementById('navbar_container');
+    nav_container.innerHTML = navbarfun();
+    let footerfun_section = document.getElementById('footerfun_section');
+    footerfun_section.innerHTML = footerfun();  
+</script>
