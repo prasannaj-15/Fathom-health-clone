@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight</title>
+    <link rel="stylesheet" href="/Style/insight.css">
+    <link rel="stylesheet" href="/Style/navbar_style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <div class="container">
+
+    
+    <div id="header">
+      <div id="title">
+        <h1>News, resources, and insights</h1>
+        <p>
+          The latest from the Fathom team on artificial intelligence, revenue cycle management, digital health and everything in between.
+        </p>
+      </div>
+      
+      <div id="header-design" >
+        
+        <div>
+          
+          <img 
+          src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e80153f9d7551fe59c817f0_dots.svg"
+          alt="dot_image"
+          />
+        </div>
+        <div>
+          <img
+          src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e86784321e17d5b3e1ca947_dots-left.svg"
+          alt=""
+          />
+        </div>
+        
+        
+      </div>
+    </div>
+    <div class="mid-header">
+      <div>
+        <img src="https://blog.fathomhealth.com/hubfs/future.jpg" alt="">
+        
+      </div>
+      <div>
+        <p>INDUSTRY NEWS</p>
+        
+      </div>
+    </div>
+    <div id="absolute-container">
+      
+      <div class="message-box" >
+        <img src="" alt="">
+    </div>
+    </div>
+
+
+    <div id="middle-bar">
+      <div>All Post</div>
+      <div>Industry News</div>
+      <div>Product News</div>
+      <div>Artificial Intelligence</div>
+      <div>Automation</div>
+      <div>Insider</div>
+      <div>Press Release</div>    
+    </div>
+
+    <div class="post-container" >
+
+
+
+    </div>
+
+
+
+    <button id="bottom-button">LOAD MORE POSTS</button>
+    <div id="bottom-update" >
+    
+      <div>
+        <h1>
+          Stay up to date
+        </h1>
+        <p>
+          Get the latest in industry news and insights delivered straight to your inbox.
+        </p>
+      </div>
+      <div>
+        <input type="email" placeholder="email address" > 
+        <button>SUBSCRIBE</button>
+      </div>
+    </div>
+  </div>
+<div id="footer"></div>
+</body>
+</html>
+<script src="/Scripts/insight.js" ></script>
+<script type="module">
+  import  {navbarfun, footerfun}  from './component/navbar.js';
+
+  let navbar = document.getElementById('navbar');
+  navbar.innerHTML = navbarfun();
+  let footer = document.getElementById('footer');
+  footer.innerHTML = footerfun();  
+</script>
+
+
+
