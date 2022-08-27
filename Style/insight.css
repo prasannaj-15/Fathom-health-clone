@@ -487,3 +487,27 @@ select {
     right: 1rem;
   }
 }
+@media all and (min-width:675px) and (max-width:845px){
+  /* medium */
+
+  .post-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+
+@media all and (min-width:250px) and (max-width:480px){
+  /* small */
+  .post-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+    
+  
+  
+  }
+
+
