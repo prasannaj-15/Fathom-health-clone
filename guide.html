@@ -13,7 +13,7 @@
     <div id="navbar_container"></div>
 
     <!-- newbanner -->
-    <div class="sectionb banner b-section">
+    <div class="sectionb banner b-section nav_pos_container">
         <div class="container">
             <div class="section-title"></div>
             <!-- blank row div -->
@@ -72,10 +72,29 @@
 </html>
 <script src="#"></script>
 <script type="module">
-    import  {navbarfun, footerfun}  from './component/navbar.js';
+    import {
+      navbarfun,
+      footerfun,
+      hamburgerFun,
+      menu_cross_iconFun,
+    } from "./component/navbar.js";
     // console.log(navbarfun);
-    let nav_container = document.getElementById('navbar_container');
+    let nav_container = document.getElementById("navbar_container");
     nav_container.innerHTML = navbarfun();
-    let footerfun_section = document.getElementById('footerfun_section');
-    footerfun_section.innerHTML = footerfun();  
-</script>
+    let footerfun_section = document.getElementById("footerfun_section");
+    footerfun_section.innerHTML = footerfun();
+    let hamburger = document.getElementById("hamburger");
+    let menu_cross_icon = document.getElementById("menu_cross_icon");
+    let container = document.querySelector(".nav_pos_container");
+    hamburger.addEventListener("click", () => {
+      container.style.position = "absolute";
+      container.style.zIndex = -"1";
+      hamburgerFun();
+    });
+    menu_cross_icon.addEventListener("click", () => {
+      container.style.position = "relative";
+      container.style.zIndex = "0";
+      menu_cross_iconFun();
+    });
+  </script>
+  
