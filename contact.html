@@ -10,6 +10,7 @@
   </head>
   <body>
     <div id="nav_container"></div>
+    <div class="container nav_pos_container"></div>
     <div id="header">
       <div id="title">
         <h1>Ready to supercharge your coding operations?</h1>
@@ -28,7 +29,7 @@
           operation and provide a free automation ROI analysis.
         </p>
 
-        <form>
+        <form id="form">
           <label for="">First Name<span>*</span></label>
           <input type="text" required />
           <label for="">Last Name<span>*</span></label>
@@ -39,14 +40,12 @@
           <input type="number" name="" id="" required />
           <label for="">Message</label>
           <input type="text" name="" id="" required />
-          <input
-            type="checkbox"
-            name=""
-            id=""
-            placeholder="Yes, I want to subscribe to Fathom blog updates."
-          />
-          <span>Yes, I want to subscribe to Fathom blog updates. <br /></span>
-          <input type="submit" />
+          <div>
+            <input type="checkbox" name="" id="checkbox" /> Yes, I want to
+            subscribe to Fathom blog updates.
+          </div>
+
+          <input id="submit" type="submit" />
         </form>
       </div>
       <div id="sidebarb">

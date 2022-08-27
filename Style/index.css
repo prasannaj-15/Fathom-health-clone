@@ -1,5 +1,6 @@
 * {
-  margin: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   padding: 0px;
 }
 #header {
@@ -53,6 +54,9 @@
   width: 160px;
   margin-top: -135px;
   font-weight: 600;
+}
+#make {
+  color: white;
 }
 a {
   text-decoration: none;
