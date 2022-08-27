@@ -1,5 +1,6 @@
 * {
-  margin: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   padding: 0px;
 }
 #header {
@@ -17,11 +18,12 @@
   height: auto;
   margin: auto;
   padding-top: 40px;
-  margin: auto;
+
   text-align: center;
 }
 #title > h1 {
   margin: auto;
+
   font-size: 80px;
   text-align: center;
   color: #ffffff;
@@ -161,17 +163,32 @@
   font-weight: normal;
   width: 60%;
 }
-form > input:focus {
+#form > input:focus {
   background-color: transparent;
   resize: none;
   outline: none;
   border-bottom: 2px solid maroon;
 }
 
-form {
+#form {
   margin-top: 30px;
+  display: block;
 }
-input {
+
+#form > div > #checkbox {
+  cursor: pointer;
+  outline: crimson;
+  display: block;
+  color: green;
+  background-color: orange;
+  width: 15px;
+  border: 1px solid black;
+}
+#form > div {
+  display: flex;
+  gap: 10px;
+}
+form > input {
   width: 100%;
   height: 40px;
   border: none;
@@ -207,11 +224,47 @@ input {
 }
 /* Medium screens and small screen */
 @media all and (min-width: 100px) and (max-width: 800px) {
+  #header {
+    width: 100%;
+    margin: auto;
+    height: 1000px;
+  }
+  #header > #title > h1 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    font-size: 60px;
+  }
   #bigbox {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
   #sidebarb {
     margin-left: 10%;
+  }
+  #form > #submit {
+    width: 60px;
+  }
+  #form > input {
+    width: 100%;
+    margin: 5px 5px 5px 5px;
+  }
+  #sidebarb > img {
+    margin: auto;
+  }
+  #last {
+    width: 100%;
+  }
+  #last > h1,
+  #last > p {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-left: 60px;
+    margin-bottom: 20px;
+  }
+  #insidediv {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
