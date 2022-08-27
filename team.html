@@ -14,7 +14,7 @@
     <div id="navbar_container"></div>
     <!-- Top banner section -->
 
-    <div class="section hero wf-section">
+    <div class="section hero wf-section nav_pos_container">
 
         <!-- sub container -->
         <div class="container">
@@ -184,10 +184,29 @@
 </html>
 <script src="./Scripts/team.js"></script>
 <script type="module">
-    import  {navbarfun, footerfun}  from './component/navbar.js';
+    import {
+      navbarfun,
+      footerfun,
+      hamburgerFun,
+      menu_cross_iconFun,
+    } from "./component/navbar.js";
     // console.log(navbarfun);
-    let nav_container = document.getElementById('navbar_container');
+    let nav_container = document.getElementById("navbar_container");
     nav_container.innerHTML = navbarfun();
-    let footerfun_section = document.getElementById('footerfun_section');
-    footerfun_section.innerHTML = footerfun();  
-</script>
+    let footerfun_section = document.getElementById("footerfun_section");
+    footerfun_section.innerHTML = footerfun();
+    let hamburger = document.getElementById("hamburger");
+    let menu_cross_icon = document.getElementById("menu_cross_icon");
+    let container = document.querySelector(".nav_pos_container");
+    hamburger.addEventListener("click", () => {
+      container.style.position = "absolute";
+      container.style.zIndex = -"1";
+      hamburgerFun();
+    });
+    menu_cross_icon.addEventListener("click", () => {
+      container.style.position = "relative";
+      container.style.zIndex = "0";
+      menu_cross_iconFun();
+    });
+  </script>
+  
