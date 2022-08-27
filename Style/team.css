@@ -479,7 +479,7 @@ h6 {
 
 /* media query */
  /* Small screens */
- @media all and (min-width: 100px) and (max-width: 400px) 
+ @media all and (min-width: 100px) and (max-width: 600px) 
  {
     body {
        
@@ -533,7 +533,7 @@ h6 {
 
  /* medium screen */
 
- @media all and (min-width: 401px) and (max-width: 800px) {
+ @media all and (min-width: 601px) and (max-width: 800px) {
     
     body{ 
         font-size: 12px;
