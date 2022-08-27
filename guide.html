@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Page</title>
+   <link rel="stylesheet" href="/Style/guide.css">
+   <link rel="stylesheet" href="./Style/navbar_style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div id="navbar_container"></div>
+
+    <!-- newbanner -->
+    <div class="sectionb banner b-section nav_pos_container">
+        <div class="container">
+            <div class="section-title"></div>
+            <!-- blank row div -->
+            <div class="row row-align-center"></div>
+            <div class="mid-container">
+                <div class="mid-col mid-col-2">
+                    <h1 class="label-header text-white">GET THE GUIDE</h1>
+                    <h1 class="heading">RFP guide for outsourced medical coding services</h1>
+                </div>
+                <div class="mid-col mid-col-1">
+                    <div class="header-image-guide shadow-large">
+                        <img id="header-img" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e95155be05ecd69b929df14_rfp-guide.png" srcset="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e95155be05ecd69b929df14_rfp-guide-p-500.png 500w, https://assets.website-files.com/5e6c01bb5212506d6c119069/5e95155be05ecd69b929df14_rfp-guide.png 616w" sizes="(max-width: 479px) 54vw, (max-width: 767px) 55vw, 22vw" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+   
+
+        <!-- mid section -->
+        <div class="section wf-section">
+            <div class="background"></div>
+            <div class="container">
+                <div class="layout-grid grid-2">
+                    <div class="text-left">
+                        <h6 class="h6-small text-left">Are you thinking about partnerships for medical coding services?</h6>
+                        <div class="paragraph">In today's healthcare industry, it's more and more common to outsource medical coding to optimize and scale coding operations. Keep pace with ever-evolving technologies and start thinking about the future of your operation.<br>
+                            <br>Learn about what to look for in a perfect coding partner by reading the RFP Guide For Medical Coding Services. </div>
+                            <ul role="list" class="paragraph margin-top">
+                                <li>The changing medical coding landscape</li>
+                                <li>Five sections to include in your RFP</li>
+                                <li>Evaluating solutions for medical coding services</li>
+                                <li>RFP setup to get stronger responses</li>
+                            </ul>
+                        </div>
+                        <!-- form -->
+                        <div class="contact-side">
+                            <div class="text-large text-left text-dark">Complete this form to download the guide.<br></div>
+                            <div class="w-embed w-script"><!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+            <![endif]-->
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script data-hubspot-rendered="true">
+              hbspt.forms.create({
+                portalId: "6570376",
+                formId: "0bf785c7-8473-4256-a13a-d0ad1e1bf259"
+            });
+            </script><div class="hbspt-form" id="hbspt-form-1661419078107-1961473683"><iframe title="Form 0" id="hs-form-iframe-0" class="hs-form-iframe" scrolling="no" width="100%" style="width: 100%; position: static; border: none; display: block; overflow: hidden; height: 362px;" height="362"></iframe></div></div></div></div><div class="contact-columns w-row"><div class="contact-column w-col w-col-6"></div><div class="contact-column w-col w-col-6"></div></div></div></div>
+      <!-- footer section -->
+      <div id="footerfun_section"></div>
+    
+</body>
+</html>
+<script src="#"></script>
+<script type="module">
+    import {
+      navbarfun,
+      footerfun,
+      hamburgerFun,
+      menu_cross_iconFun,
+    } from "./component/navbar.js";
+    // console.log(navbarfun);
+    let nav_container = document.getElementById("navbar_container");
+    nav_container.innerHTML = navbarfun();
+    let footerfun_section = document.getElementById("footerfun_section");
+    footerfun_section.innerHTML = footerfun();
+    let hamburger = document.getElementById("hamburger");
+    let menu_cross_icon = document.getElementById("menu_cross_icon");
+    let container = document.querySelector(".nav_pos_container");
+    hamburger.addEventListener("click", () => {
+      container.style.position = "absolute";
+      container.style.zIndex = -"1";
+      hamburgerFun();
+    });
+    menu_cross_icon.addEventListener("click", () => {
+      container.style.position = "relative";
+      container.style.zIndex = "0";
+      menu_cross_iconFun();
+    });
+  </script>
+  

@@ -68,30 +68,18 @@
   font-weight: normal;
   letter-spacing: 1px;
 }
-form {
-  margin-top: 30px;
-}
-input {
-  width: 100%;
-  height: 40px;
-  border: none;
-  border-bottom: 3px solid #cbd6e2;
-  margin-top: 12px;
-  margin-bottom: 38px;
-}
-label > span {
-  color: red;
-}
+
 #sidebarb > h1 {
   position: static;
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+  margin-top: 16px;
   clear: none;
   font-family: Barlow, sans-serif;
   color: #293240;
   font-size: 24px;
   line-height: 120%;
-  font-weight: 700;
+  font-weight: 100;
   width: 60%;
 }
 #sidebarb > h6 {
@@ -121,32 +109,7 @@ label > span {
   margin-left: 7%;
   margin-top: 30px;
 }
-form > input:nth-last-child(3) {
-  width: 13px;
-  height: 13px;
-  margin: 0px;
-}
 
-form > input:nth-last-child(1) {
-  background: #9a76d0;
-  border-color: #9a76d0;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 600;
-  width: 90px;
-  border-radius: 4px;
-  height: 40px;
-  margin-top: 30px;
-}
-#last {
-  background-color: #f3f5fb;
-  width: 100%;
-  margin: auto;
-  margin-top: 80px;
-  padding-top: 100px;
-  display: grid;
-  padding-bottom: 100px;
-}
 #last > h1 {
   color: #293240;
   font-size: 50px;
@@ -197,6 +160,50 @@ form > input:nth-last-child(1) {
   text-align: left;
   font-weight: normal;
   width: 60%;
+}
+form > input:focus {
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  border-bottom: 2px solid maroon;
+}
+
+form {
+  margin-top: 30px;
+}
+input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 3px solid #cbd6e2;
+  margin-top: 12px;
+  margin-bottom: 38px;
+}
+
+#submit {
+  background: #9a76d0;
+  border-color: #9a76d0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  width: 90px;
+  border-radius: 4px;
+  height: 40px;
+  margin-top: 30px;
+}
+
+#last {
+  background-color: #f3f5fb;
+  width: 100%;
+  margin: auto;
+  margin-top: 80px;
+  padding-top: 100px;
+  display: grid;
+  padding-bottom: 100px;
+}
+#except {
+  width: 15px;
+  margin-right: 10px;
 }
 /* Medium screens and small screen */
 @media all and (min-width: 100px) and (max-width: 800px) {
