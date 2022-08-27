@@ -164,10 +164,11 @@
   width: 60%;
 }
 #form > input:focus {
-  background-color: transparent;
-  resize: none;
   outline: none;
   border-bottom: 2px solid maroon;
+}
+#form > input[type="submit"]:focus {
+  border: 1px solid #9a76d0;
 }
 
 #form {
@@ -177,12 +178,10 @@
 
 #form > div > #checkbox {
   cursor: pointer;
-  outline: crimson;
+
   display: block;
-  color: green;
-  background-color: orange;
+
   width: 15px;
-  border: 1px solid black;
 }
 #form > div {
   display: flex;
@@ -197,13 +196,14 @@ form > input {
   margin-bottom: 38px;
 }
 
-#submit {
+form > input[type="submit"] {
   background: #9a76d0;
-  border-color: #9a76d0;
+  border: 1px solid #9a76d0;
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
   width: 90px;
+  cursor: pointer;
   border-radius: 4px;
   height: 40px;
   margin-top: 30px;
