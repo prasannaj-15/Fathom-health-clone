@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+
+#wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0px 10px;
+  min-height: 100%;
+}
+#main-container {
+  max-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+#main-body {
+  max-width: 600px;
+  position: relative;
+}
+#logo img {
+  width: 75px;
+  height: 75px;
+}
+
+#header-container {
+  padding-right: 120px;
+}
+#Company-name ~ a {
+  text-decoration: none;
+  color: #2975ca;
+}
+#apply-button {
+  background: #2975ca;
+  padding: 12px 20px;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.app-title {
+  margin-bottom: 0px;
+}
+
+#Company-name {
+  font-size: 16px;
+}
+.location {
+  color: #757575;
+  margin: 8px 0px;
+}
+
+#content {
+  line-height: 20px;
+}
+
+#application {
+  padding: 25px 30px 30px 30px;
+  background-color: #fafafa;
+  max-width: 550px;
+}
+
+form h2 {
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+.star {
+  color: red;
+}
+.requerd {
+  float: right;
+  font-size: 12px;
+  color: #000000;
+}
+.fields {
+  clear: both;
+  overflow: auto;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+#application label {
+  margin-right: 15px;
+  text-align: right;
+}
+
+.fields input {
+  width: 397px;
+  padding: 5px;
+}
+
+#email-div {
+  margin-left: 31px;
+}
+
+#phone-div {
+  margin-left: 27px;
+}
+
+.fields > fieldset #resume {
+  float: left;
+}
+#submit_buttons {
+  text-align: right;
+}
+#submit_buttons #submit_app {
+  background: #2975ca;
+  font-weight: normal;
+  padding: 12px 20px 14px 20px;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 3px;
+  border: 0px;
+  transition: background 0.15s ease 0s, border-color 0.15s ease 0s;
+  -webkit-appearance: none;
+  color: white;
+  margin: 20px;
+}
+
+.link-container a {
+  text-decoration: none;
+  color: #2975ca;
+}
