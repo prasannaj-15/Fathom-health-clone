@@ -126,6 +126,7 @@ function addmedia(media) {
   }
 }
 
+
 // Cross button script - responsive
 // menu_cross_icon.addEventListener("click", menu_cross_iconFun);
 function menu_cross_iconFun() {

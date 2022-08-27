@@ -6,7 +6,7 @@ a {
 }
 
 #logoimg {
-  max-width: 130px;
+  max-width: 120px;
 }
 .navbar {
   display: flex;
@@ -18,10 +18,12 @@ a {
   position: sticky;
   top: 0;
 }
-
+.nav-links {
+  margin: 10px 0;
+}
 .nav-links a {
   color: #293240;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .nav-links a:hover {
@@ -31,9 +33,9 @@ a {
 /* navbar menu */
 .menu {
   display: flex;
-  gap: 1em;
+  gap: 0.8em;
   font-family: Barlow, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   font-weight: 500;
 }
@@ -43,7 +45,7 @@ a {
 }
 
 .menu li {
-  padding: 5px 14px;
+  padding: 5px 12px;
 }
 
 /* Responsive navbar */
@@ -216,7 +218,7 @@ input[type="checkbox"] {
     border-radius: 6px;
     width: 90%;
     margin: auto;
-    margin-top: 6.8%;
+    margin-top: 5.8%;
   }
 
   .menu li:hover {
