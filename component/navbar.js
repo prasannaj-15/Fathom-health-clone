@@ -1,11 +1,11 @@
 /*
 let hamburger = document.getElementById('hamburger');
 let menu_cross_icon = document.getElementById('menu_cross_icon');
-let media = window.matchMedia("(max-width: 768px)");
 */
+let media = window.matchMedia("(max-width: 768px)");
 
-function navbarfun(){
-    return `<nav class="navbar">
+function navbarfun() {
+  return `<nav class="navbar">
     <div class="logo"><a href="/"><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ee401ee1f08215e6dbf0661_color-lettermark.svg" alt="" id="logoimg"></a></div>
     <!-- Navigation Menu -->
     <ul class="nav-links">
@@ -22,11 +22,11 @@ function navbarfun(){
             <li><a href="/">CONTACT</a></li>
         </div>
     </ul>
-</nav>`
+</nav>`;
 }
 
-function footerfun(){
-    return `<footer class="footer">
+function footerfun() {
+  return `<footer class="footer">
     <div class="footer_section">
         <div class="footer_container">
             <div class="footer_row">
@@ -101,39 +101,36 @@ function footerfun(){
             </div>
         </div>
     </div>
-</footer>`
+</footer>`;
 }
 
-
-
-/*
 // hamburger button script - responsive
-hamburger.addEventListener('click', hamburgerFun);
-function hamburgerFun(){
-    let menu = document.querySelector('.menu');
-    // menu.setAttribute('id', 'menu');
-    menu.style.display = "block";
-    menu_cross_icon.style.display = "block";
-    hamburger.style.display = "none";
- 
-};
+// hamburger.addEventListener("click", hamburgerFun);
 
-let addmedia = (media) =>{
-    if(media.matches){
-        let menu = document.querySelector('.menu');
-        menu.style.display = "none";
-        menu_cross_icon.style.display = "none";
-        hamburger.style.display = "block"; 
-    }else{
-        menu.style.display = "block";
-    }
+function hamburgerFun() {
+  let menu = document.querySelector(".menu");
+  // menu.setAttribute('id', 'menu');
+  menu.style.display = "block";
+  menu_cross_icon.style.display = "block";
+  hamburger.style.display = "none";
+}
+
+function addmedia(media) {
+  if (media.matches) {
+    let menu = document.querySelector(".menu");
+    menu.style.display = "none";
+    menu_cross_icon.style.display = "none";
+    hamburger.style.display = "block";
+  } else {
+    menu.style.display = "block";
+  }
 }
 
 // Cross button script - responsive
-menu_cross_icon.addEventListener('click', menu_cross_iconFun)
-function menu_cross_iconFun(){
-    addmedia(media);
-    media.addEventListener(addmedia);
-};
-    */
-export  {navbarfun , footerfun};
+// menu_cross_icon.addEventListener("click", menu_cross_iconFun);
+function menu_cross_iconFun() {
+  addmedia(media);
+  //   media.addEventListener(addmedia);
+}
+
+export { navbarfun, footerfun, hamburgerFun, menu_cross_iconFun };
