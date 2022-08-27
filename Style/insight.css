@@ -83,6 +83,7 @@ height:100%;
 .sub-mid-header>div>div{
 margin-top:10%;
   width:100%;
+  margin-left:10px;
 height:100%;
 line-height:30px;
 }
@@ -260,7 +261,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(90deg, var(--grey) 31px, transparent 1px) 50%, linear-gradient(180deg, var(--grey) 31px, var(--blue) 1px) 50%;
+
   background-size: 32px 32px;
   color: var(--dark);
 }
