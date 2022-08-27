@@ -3,10 +3,11 @@ let hamburger = document.getElementById('hamburger');
 let menu_cross_icon = document.getElementById('menu_cross_icon');
 */
 let media = window.matchMedia("(max-width: 768px)");
+let maxmedia = window.matchMedia("(min-width: 769px) and (max-width: 1024px)");
 
 function navbarfun() {
   return `<nav class="navbar">
-    <div class="logo"><a href="/"><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ee401ee1f08215e6dbf0661_color-lettermark.svg" alt="" id="logoimg"></a></div>
+    <div class="logo"><a href="./index.html"><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ee401ee1f08215e6dbf0661_color-lettermark.svg" alt="" id="logoimg"></a></div>
     <!-- Navigation Menu -->
     <ul class="nav-links">
         <!-- Using Chebox hacks -->
@@ -14,12 +15,12 @@ function navbarfun() {
         <label for="checkbox_toggle" id="hamburger" class="hamburger">&#9776;</label>
         <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6c01bb8abd7722ca7d8e42_icon-x.svg" id="menu_cross_icon" />
         <div class="menu" id="menu">
-            <li><a href="/">SERVICES</a></li>
-            <li><a href="/">SECURITY</a></li>
-            <li><a href="/">TEAM</a></li>
-            <li><a href="/">CAREERS</a></li>
-            <li><a href="/">INSIGHTS</a></li>
-            <li><a href="/">CONTACT</a></li>
+            <li><a href="./services.html">SERVICES</a></li>
+            <li><a href="./security.html">SECURITY</a></li>
+            <li><a href="./team.html">TEAM</a></li>
+            <li><a href="./careers.html">CAREERS</a></li>
+            <li><a href="./insights.html">INSIGHTS</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
         </div>
     </ul>
 </nav>`;
@@ -46,10 +47,10 @@ function footerfun() {
                         <div class="large_footer_text footer_header">Technology</div>
                         <ul class="footer_ul">
                             <li>
-                                <a href="">Solutions</a>
+                                <a href="./services.html">Solutions</a>
                             </li>
                             <li>
-                                <a href="">Security</a>
+                                <a href="./security.html">Security</a>
                             </li>
                         </ul>
                     </div>
@@ -57,13 +58,13 @@ function footerfun() {
                         <div class="large_footer_text footer_header">Company</div>
                         <ul class="footer_ul">
                             <li>
-                                <a href="">Team</a>
+                                <a href="./team.html">Team</a>
                             </li>
                             <li>
-                                <a href="">Contact</a>
+                                <a href="./contact.html">Contact</a>
                             </li>
                             <li>
-                                <a href="">Careers</a>
+                                <a href="./careers.html">Careers</a>
                             </li>
                         </ul>
                     </div>
@@ -71,10 +72,10 @@ function footerfun() {
                         <div class="large_footer_text footer_header">Legal</div>
                         <ul class="footer_ul">
                             <li>
-                                <a href="">Privacy policy</a>
+                                <a href="./privacy_policy.html">Privacy policy</a>
                             </li>
                             <li>
-                                <a href="">Cookies</a>
+                                <a href="./cookie.html">Cookies</a>
                             </li>
                         </ul>
                     </div>
@@ -122,16 +123,23 @@ function addmedia(media) {
     menu_cross_icon.style.display = "none";
     hamburger.style.display = "block";
   } else {
-    menu.style.display = "block";
+    menu.style.display = "flex";
   }
 }
 
+// let removemedia = (maxmedia) => {
+//   if (maxmedia.matches) {
+//     menu.style.display = "flex";
+//     hamburger.style.visibility = "hidden";
+//   }
+
+// };
 
 // Cross button script - responsive
 // menu_cross_icon.addEventListener("click", menu_cross_iconFun);
 function menu_cross_iconFun() {
   addmedia(media);
-  //   media.addEventListener(addmedia);
+  //   removemedia(maxmedia);
 }
 
 export { navbarfun, footerfun, hamburgerFun, menu_cross_iconFun };
