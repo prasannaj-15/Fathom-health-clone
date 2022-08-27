@@ -52,6 +52,11 @@
   border: 0px;
   width: 160px;
   margin-top: -135px;
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  color: #9a76d0;
 }
 body > img {
   margin-top: -135px;
