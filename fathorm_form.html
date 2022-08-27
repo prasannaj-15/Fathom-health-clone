@@ -4,13 +4,181 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job application for Senior Developer</title>
+    <title>Job application for Senior Software Engineer</title>
+    <link rel="stylesheet" href="./Style/fathorm_form.css">
 </head>
 <body>
     <div id="wrapper">
+        <!-- Main container of all website -->
         <div id="main-container">
-            
+            <div id="main-body">
+                <div id="logo-container">
+                    <div id="logo">
+                        <img src="https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/517/600/resized/fathom_1560285751.png?1640815659"
+                            alt="">
+                    </div>
+                </div>
+                <div id="header-container">
+                    <a href="#" id="apply-button" class="button">Apply Now</a>
+                    <h1 class="app-title" id="designation-title">Senior Software Engineer, Backend</h1><br>
+                    <span id="Company-name">at FATHOM</span><a href="./careers.html">(View all jobs)</a>
+                    <div class="location">
+                        <p>San Frnasisco</p>
+                    </div>
+                </div>
+                <div id="content">
+                    <!-- Paragraph elements container -->
+                    <div class="section-page">
+                        <div class="setcion-page">
+                            <div class="section-page">
+                                <div class="section-page">
+                                    <div class="first-para">
+                                        <p>
+                                            Fathom is on a mission to understand and structure the world’s medical data.
+                                            We are a venture-backed company with an engineering team out of
+                                            organizations like Google, Facebook, and Twitch. We are starting by using
+                                            NLP deep learning to structure the data contained within physician notes to
+                                            automate medical coding, a process performed by 125,000 FTEs that costs the
+                                            US healthcare system over $15B annually.
+                                        </p>
+                                    </div>
+                                    <div class="space">&nbsp;</div>
+                                    <div class="second-para">
+                                        <p>
+                                            We are looking for a <strong id="bold-word">Senior Software Engineer,
+                                                Backend </strong> to work on data products that drive the core of our
+                                            business. We want to work with teammates in the Bay area, who are excited
+                                            about learning how to build and support machine learning pipelines that
+                                            scale not just computationally, but in ways that are flexible, iterative,
+                                            and geared for collaboration. If you are a backend expert able to unify
+                                            data, and build systems that scale from both an operational and an
+                                            organizational perspective, Fathom is an opportunity worth exploring!
+                                        </p>
+                                    </div>
+                                    <div class="space">&nbsp;</div>
+                                    <h3 id="responsibility-head">Your role and responsibilities will include:</h3>
+                                </div>
+                                <div class="centered-page-section">
+                                    <ul class="points-main">
+                                        <li>Developing data infrastructure to ingest, sanitize and normalize a broad
+                                            range of medical data, such as electronics health records, journals,
+                                            established medical ontologies, crowd-sourced labelling and other human
+                                            inputs</li>
+                                        <li>Building performant and expressive interfaces to the data</li>
+                                        <li>Creating infrastructure to help us not only scale up data ingest, but
+                                            large-scale cloud-based machine learning</li>
+                                    </ul>
+                                </div>
+                                <div class="centered-page-section">
+                                    &nbsp;
+                                </div>
+                                <h3 class="temate-head">We are looking for a teammate with:</h3>
+                                <ul class="teammate-points">
+                                    <li>5+ years of development experience in a company/production setting</li>
+                                    <li>Experience building data pipelines from disparate sources</li>
+                                    <li>Hands-on experience building and scaling up compute clusters</li>
+                                    <li>A solid understanding of databases and large-scale data processing frameworks
+                                        like Hadoop or Spark and the ability to evaluate which tools to use on the job
+                                    </li>
+                                    <li>A unique combination of creative and analytic skills apt of designing a system
+                                        capable of pulling together, training, and testing dozens of data sources under
+                                        a unified ontology</li>
+                                </ul>
+
+                                <div class="centered-page-section">
+                                    <h3>&nbsp;</h3>
+                                    <h3 class="bonus-heading">Bonus points if you have:</h3>
+                                    <ul class="bottom-list">
+                                        <li>Know-how of developing systems to do or support machine learning, including
+                                            experience working with NLP toolkits like Stanford CoreNLP, OpenNLP, and/or
+                                            Python’s NLTK</li>
+                                        <li>Expertise with wrangling healthcare data and/or HIPAA</li>
+                                        <li>Experience with managing large-scale data labelling and acquisition, through
+                                            tools such as through Amazon Turk or DeepDive</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="centered-page-section">
+                    <!-- form div container section -->
+                    <div class="space">
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+                <div id="application">
+                    <form>
+                        <h2>Apply for this Job</h2>
+                        <div class="requerd"> <span class="star">*</span>Required</div>
+                        <div class="clear"></div>
+                        <div class="fields">
+                            <label class="fname" for="first-name">First Name<span class="star">*</span></label>
+                            <input type="text" id="first-name" aria-required="true" maxlength="225">
+                        </div>
+                        <div class="fields">
+                            <label class="lname" for="last-name">Last Name<span class="star">*</span></label>
+                            <input type="text" id="last-name" aria-required="true" maxlength="225">
+                        </div>
+                        <div class="fields" id="email-div">
+                            <label class="email" for="email">Email<span class="star">*</span></label>
+                            <input type="email" id="email" aria-required="true" maxlength="255">
+                        </div>
+                        <div class="fields" id="phone-div">
+                            <label class="email" for="phone">Phone<span class="star">*</span></label>
+                            <input type="tel" id="phone" aria-required="true" maxlength="11">
+                        </div>
+                        <div class="fields">
+                            <fieldset>
+                                <legend> <label id="resume">Resume/CV
+                                    </label></legend>
+                                <div class="attach-or-paste">
+                                    <div class="link-container">
+                                        <a href="">Attach,</a> <span>&nbsp; &nbsp;</span>
+                                        <a href="">Dropbox,</a> <span>&nbsp; &nbsp;</span>
+                                        <a href="">Google Drive</a><span>&nbsp; &nbsp;</span>
+                                        <a href="">or enter manually</a><span>&nbsp; &nbsp;</span>
+                                    </div>
+                                    <div class="resume-allowable-form">
+                                        (File types: pdf, doc, docx, txt, rtf)
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="fields">
+                            <fieldset>
+                                <legend> <label id="resume">Cover Letter
+                                    </label></legend>
+                                <div class="attach-or-paste">
+                                    <div class="link-container">
+                                        <a href="">Attach,</a> <span>&nbsp; &nbsp;</span>
+                                        <a href="">Dropbox,</a> <span>&nbsp; &nbsp;</span>
+                                        <a href="">Google Drive</a><span>&nbsp; &nbsp;</span>
+                                        <a href="">or enter manually</a><span>&nbsp; &nbsp;</span>
+                                    </div>
+                                    <div class="resume-allowable-form">
+                                        (File types: pdf, doc, docx, txt, rtf)
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <hr>
+                        <div class="fields">
+                            <label for="linkedin">LinkedIn Profile <span class="star">*</span></label><br>
+                            <input type="text" id="linkedin" maxlength="255" aria-required="true">
+                        </div>
+                        <div class="fields">
+                            <label for="website">Website</label><br>
+                            <input type="text" id="website"  maxlength="255" aria-required="true">
+                        </div>
+                        <hr>
+                        <div id="submit_buttons">
+                            <input type="button" id="submit_app" value="Submit Application" class="button">
+                        </div>
+                    </form>
+                    <!-- form finished here -->
+                </div>
+            </div>
         </div>
-    </div>
 </body>
 </html>
