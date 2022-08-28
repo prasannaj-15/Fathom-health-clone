@@ -275,7 +275,7 @@
 }
 
 .report-box{
-    width: 40%;
+    width: 55%;
     margin: auto;
     background-color: #f3f5fb;
 }
@@ -285,16 +285,26 @@
 }
 
 #repo-head{
-    width: 100%;
+   
     margin-bottom: 10px;
+    text-align: center;
+    
+   
 }
 
 #first-p{
     width: 100%;
     margin-bottom: 10px;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
     letter-spacing: 0.5px;
+    
+    margin-bottom: 0;
+    font-family: 'IBM Plex Sans',sans-serif;
+    color: #293240;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: left;
 }
 #email-id{
     color:#a676d0;
