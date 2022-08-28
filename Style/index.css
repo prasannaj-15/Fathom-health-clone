@@ -1,6 +1,12 @@
 * {
-  margin: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   padding: 0px;
+}
+#nav_container {
+  position: fixed;
+  top: 0px;
+  width: 100%;
 }
 #header {
   width: 100%;
@@ -52,6 +58,14 @@
   border: 0px;
   width: 160px;
   margin-top: -135px;
+  font-weight: 600;
+}
+#make {
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: #9a76d0;
 }
 body > img {
   margin-top: -135px;

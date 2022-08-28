@@ -298,7 +298,7 @@ letter-spacing: 1.7px;
 }
 
 .report-box{
-    width: 40%;
+    width: 55%;
     margin: auto;
     background-color: #f3f5fb;
 }
@@ -308,10 +308,10 @@ letter-spacing: 1.7px;
 }
 
 #repo-head{
-    width: 100%;
+   
     margin-bottom: 10px;
     text-align: center;
-    justify-content: center;
+
 }
 
 #repo-head{
@@ -324,9 +324,9 @@ letter-spacing: 1.7px;
     width: 110%;
     margin-bottom: 10px;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
     letter-spacing: 0.5px;
-    font-family: 'Barlow',sans-serif;
+
 }
 #email-id{
     color:#a676d0;
