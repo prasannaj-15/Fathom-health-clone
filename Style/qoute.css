@@ -84,14 +84,14 @@
 .star {
   color: red;
 }
-#download-app-img{
-  padding-left:  40px;
+#download-app-img {
+  padding-left: 40px;
   padding-right: 10px;
   margin-top: 36px;
   margin-bottom: 0%;
 }
 
-#download-app-img img{
+#download-app-img img {
   margin-bottom: 0%;
 }
 .first-name {
@@ -181,11 +181,18 @@
   margin: auto;
   margin-bottom: 15px;
 }
-
+#checkbox-container .checkbox {
+  display: block;
+}
 .checkbox {
   margin: 7px 0px;
 }
-
+.checkbox-child-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
 #medical-coding {
   width: 100%;
   margin-bottom: 10px;
@@ -384,4 +391,84 @@
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+
+#from-container label {
+  color: #293240;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* media Queries started from here */
+
+/* Medium Screen */
+@media all and (min-width: 740px) and (max-width: 964px) {
+  #qoute-banner-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+  }
+
+  #banner-desc p {
+    margin: auto;
+    margin-top: 10px;
+    font-size: 30px;
+    line-height: 34px;
+    font-family: sans-serif;
+  }
+  .request-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+  }
+  #parent-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    margin-top: 60px;
+  }
+}
+/* Small Screen */
+
+@media all and (min-width: 320px) and (max-width: 739px) {
+  #qoute-banner-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  #banner-desc p {
+    margin: auto;
+    margin-top: 10px;
+    font-size: 30px;
+    line-height: 22px;
+    font-family: sans-serif;
+    margin-top: 10px;
+  }
+  .request-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+  }
+  #parent-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    margin-top: 60px;
+  }
+  #from-container label {
+    font-size: 12px;
+  }
+  #banner-head h1 {
+    font-size: 42px;
+  }
+  #banner-desc p {
+    font-size: 22px;
+  }
 }
