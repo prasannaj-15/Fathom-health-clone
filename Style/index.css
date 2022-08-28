@@ -3,6 +3,11 @@
   margin-right: 0px;
   padding: 0px;
 }
+#nav_container {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
 #header {
   width: 100%;
   margin: auto;

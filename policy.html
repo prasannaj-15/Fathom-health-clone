@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./Style/policy.css" />
   </head>
   <body>
-    <div id="nav_container"></div>
+    <div id="navbar_container"></div>
+    <div class="nav-pos-container">
+   
     
     <div id="header">
       <div id="title">
@@ -174,15 +176,35 @@
     <p>We may modify this Privacy Policy at any time. If we make material changes to this Privacy Policy, we will notify you by updating the effective date of this Privacy Policy and posting the modified Privacy Policy on the Service. We may also provide notification of changes via email if we have your email address, through the Service or in another manner that we believe is reasonably likely to reach you.Any modifications to this Privacy Policy will be effective when posted (or as otherwise indicated at the time of posting). In all cases, your continued use of the Service after the posting of any modified Privacy Policy indicates your acceptance of the modified Privacy Policy.</p>
     </div>
 
-    <div id="footer"></div>
+    <div id="footerfun_section"></div>
+  </div>
+  
   </body>
 </html>
 <script type="module">
-  import { navbarfun, footerfun } from "./component/navbar.js";
-  let c = document.getElementById("nav_container");
-  c.innerHTML = navbarfun();
-  console.log(navbarfun);
-  console.log(footerfun);
-  let f = document.getElementById("footer");
-  f.innerHTML = footerfun();
+  import {
+    navbarfun,
+    footerfun,
+    hamburgerFun,
+    menu_cross_iconFun,
+  } from "./component/navbar.js";
+  // console.log(navbarfun);
+  let nav_container = document.getElementById("navbar_container");
+  nav_container.innerHTML = navbarfun();
+  let footerfun_section = document.getElementById("footerfun_section");
+  footerfun_section.innerHTML = footerfun();
+  let hamburger = document.getElementById("hamburger");
+  let menu_cross_icon = document.getElementById("menu_cross_icon");
+  let container = document.querySelector(".nav_pos_container");
+  hamburger.addEventListener("click", () => {
+    container.style.position = "absolute";
+    container.style.zIndex = -"1";
+    hamburgerFun();
+  });
+  menu_cross_icon.addEventListener("click", () => {
+    container.style.position = "relative";
+    container.style.zIndex = "0";
+    menu_cross_iconFun();
+  });
 </script>
+<!-- <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script> -->
