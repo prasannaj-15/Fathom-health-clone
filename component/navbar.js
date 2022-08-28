@@ -72,7 +72,7 @@ function footerfun() {
                         <div class="large_footer_text footer_header">Legal</div>
                         <ul class="footer_ul">
                             <li>
-                                <a href="./privacy_policy.html">Privacy policy</a>
+                                <a href="./policy.html">Privacy policy</a>
                             </li>
                             <li>
                                 <a href="./cookie.html">Cookies</a>
