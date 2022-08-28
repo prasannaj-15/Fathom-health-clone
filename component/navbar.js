@@ -19,7 +19,7 @@ function navbarfun() {
             <li><a href="./security.html">SECURITY</a></li>
             <li><a href="./team.html">TEAM</a></li>
             <li><a href="./careers.html">CAREERS</a></li>
-            <li><a href="./insights.html">INSIGHTS</a></li>
+            <li><a href="./insight.html">INSIGHTS</a></li>
             <li><a href="./contact.html">CONTACT</a></li>
         </div>
     </ul>
