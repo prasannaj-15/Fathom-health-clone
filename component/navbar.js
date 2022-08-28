@@ -86,7 +86,7 @@ function footerfun() {
                                 <a href="">Articles</a>
                             </li>
                             <li>
-                                <a href="">RFP guide for medical coding</a>
+                                <a href="./guide.html">RFP guide for medical coding</a>
                             </li>
                             <li>
                                 <a href="">Medical coding automation checklist</a>
