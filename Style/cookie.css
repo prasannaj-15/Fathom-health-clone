@@ -1,6 +1,7 @@
 body {
     margin: 0;
     min-height: 100%;
+    width: 100%;
     overflow: visible;
     background-color: #fff;
     font-family: Barlow,sans-serif;
@@ -8,6 +9,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
+    border: 2px solid teal;
 }
 .section.banner {
     z-index: auto;
@@ -32,7 +34,7 @@ div{
     position: relative;
     z-index: 1;
     display: block;
-    width: 100%;
+    /* width: 100%; */
     max-width: 1248px;
     margin-right: auto;
     margin-left: auto;
@@ -130,6 +132,7 @@ strong {
     display: flex;
     padding-bottom: 10px;
     align-items: flex-end;
+    justify-content: flex-end;
     border-bottom: 3px solid #293240;
 }
 .w-row::before {

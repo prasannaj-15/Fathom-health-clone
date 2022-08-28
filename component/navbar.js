@@ -6,7 +6,7 @@ let media = window.matchMedia("(max-width: 768px)");
 
 function navbarfun() {
   return `<nav class="navbar">
-    <div class="logo"><a href="/"><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ee401ee1f08215e6dbf0661_color-lettermark.svg" alt="" id="logoimg"></a></div>
+    <div class="logo"><a href="./index.html"><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ee401ee1f08215e6dbf0661_color-lettermark.svg" alt="" id="logoimg"></a></div>
     <!-- Navigation Menu -->
     <ul class="nav-links">
         <!-- Using Chebox hacks -->
@@ -14,12 +14,12 @@ function navbarfun() {
         <label for="checkbox_toggle" id="hamburger" class="hamburger">&#9776;</label>
         <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6c01bb8abd7722ca7d8e42_icon-x.svg" id="menu_cross_icon" />
         <div class="menu" id="menu">
-            <li><a href="/">SERVICES</a></li>
-            <li><a href="/">SECURITY</a></li>
-            <li><a href="/">TEAM</a></li>
-            <li><a href="/">CAREERS</a></li>
-            <li><a href="/">INSIGHTS</a></li>
-            <li><a href="/">CONTACT</a></li>
+            <li><a href="./services.html">SERVICES</a></li>
+            <li><a href="./security.html">SECURITY</a></li>
+            <li><a href="./team.html">TEAM</a></li>
+            <li><a href="./careers.html">CAREERS</a></li>
+            <li><a href="./insight.html">INSIGHTS</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
         </div>
     </ul>
 </nav>`;
@@ -57,13 +57,13 @@ function footerfun() {
                         <div class="large_footer_text footer_header">Company</div>
                         <ul class="footer_ul">
                             <li>
-                                <a href="">Team</a>
+                                <a href="./team.html">Team</a>
                             </li>
                             <li>
-                                <a href="">Contact</a>
+                                <a href="./contact.html">Contact</a>
                             </li>
                             <li>
-                                <a href="">Careers</a>
+                                <a href="./careers.html">Careers</a>
                             </li>
                         </ul>
                     </div>
@@ -71,10 +71,10 @@ function footerfun() {
                         <div class="large_footer_text footer_header">Legal</div>
                         <ul class="footer_ul">
                             <li>
-                                <a href="">Privacy policy</a>
+                                <a href="./policy.html">Privacy policy</a>
                             </li>
                             <li>
-                                <a href="">Cookies</a>
+                                <a href="./cookie.html">Cookies</a>
                             </li>
                         </ul>
                     </div>
@@ -85,10 +85,10 @@ function footerfun() {
                                 <a href="">Articles</a>
                             </li>
                             <li>
-                                <a href="">RFP guide for medical coding</a>
+                                <a href="./guide.html">RFP guide for medical coding</a>
                             </li>
                             <li>
-                                <a href="">Medical coding automation checklist</a>
+                                <a href="#">Medical coding automation checklist</a>
                             </li>
                         </ul>
                     </div>
