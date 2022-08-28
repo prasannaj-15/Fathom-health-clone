@@ -1,6 +1,10 @@
-import { navbarfun, footerfun } from "../component/navbar.js";
+import { navbarfun, footerfun } from "./component/navbar.js";
 let c = document.getElementById("nav_container");
 c.innerHTML = navbarfun();
+console.log(navbarfun);
+console.log(footerfun);
+let f = document.getElementById("footer");
+f.innerHTML = footerfun();
 console.log(navbarfun);
 console.log(footerfun);
 
@@ -48,7 +52,7 @@ let post_data = new Array(
   }
 );
 console.log(post_data);
-let container = document.querySelector("#blogcontainer");
+
 post_data.forEach(function (el) {
   let div = document.createElement("div");
   let image = document.createElement("img");
@@ -62,6 +66,5 @@ post_data.forEach(function (el) {
   div.append(image, h6, h1, p);
   document.querySelector("#blogcontainer").append(div);
 });
-let f = document.getElementById("footer");
-f.innerHTML = footerfun();
+
 //extra
