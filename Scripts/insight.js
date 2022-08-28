@@ -62,7 +62,7 @@ let post_data = [
             "post_type": "INDUSTRY NEWS",
             "post_type_url": "https://blog.fathomhealth.com/tag/industry-news",
             "post_headline": "Top 10 revenue cycle trends",
-            "post_headline_url": "https://blog.fathomhealth.com/top-10-revenue-cycle-trends-for-2020",
+            "post_headline_url": "top-revenue.html",
             "post_description": "1. A move towards pricing transparency 🔍 There have been public calls for more pricing transparency in healthcare for decades, but limited public int..."
            },
            {
@@ -71,7 +71,7 @@ let post_data = [
             "post_type": "PRODUCT NEWS",
             "post_type_url": "https://blog.fathomhealth.com/tag/product-news",
             "post_headline": "Fathom sets new industry automation rate benchmark with 96% live coding automation for emergency departments",
-            "post_headline_url": "https://blog.fathomhealth.com/fathom-sets-highest-industry-automation-rate-with-96-live-coding-automation-for-emergency-departments",
+            "post_headline_url": "fathom_sets.html",
             "post_description": "SAN FRANCISCO, CA — August 2, 2022 — Fathom, the leader in AI medical coding automation, announced it is delivering the industry’s highest automation ..."
            },
            {
@@ -80,7 +80,7 @@ let post_data = [
             "post_type": "INSIDER",
             "post_type_url": "https://blog.fathomhealth.com/tag/insider",
             "post_headline": "What should HIM directors prioritize to ensure medical coding quality?",
-            "post_headline_url": "https://blog.fathomhealth.com/what-should-him-directors-prioritize-to-ensure-medical-coding-quality",
+            "post_headline_url": "howShould.html",
             "post_description": "As an HIM director, you’re likely looking for ways to reduce inefficiencies to boost your organization’s bottom line and ensure PHI security."
            },
            {
@@ -258,4 +258,12 @@ function filterData(num){
 function redirect(ele){
 
     window.location.href = `${ele.post_headline_url}`
+}
+document.querySelector(`.sub-mid-header`).addEventListener(`click`,firstPost);
+
+
+function firstPost(){
+
+    window.location.href = `${post_data[0].post_headline_url}`
+
 }

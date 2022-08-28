@@ -22,7 +22,7 @@ function navbarfun() {
             <li><a href="./insights.html">INSIGHTS</a></li>
             <li><a href="./contact.html">CONTACT</a></li>
         </div>
-    </ul>
+    </ul> 
 </nav>`;
 }
 
