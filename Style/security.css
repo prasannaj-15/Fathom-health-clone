@@ -1,5 +1,6 @@
 * {
-  margin: 0%;
+margin-left: 0%;
+margin-right: 0%;
   padding: 0%;
 }
 
@@ -11,7 +12,7 @@
 #container {
   background-image: url("https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8115255836db2cd3bfd6b2_background.jpg");
   width: 100%;
-  height: 400px;
+
   text-align: center;
   background-size: cover;
   position: relative;
@@ -57,6 +58,7 @@
   color: #fff;
   width: 100%;
   text-align: center;
+  font-family: 'Barlow',sans-serif;
 }
 
 #left-grid-img img {
@@ -100,10 +102,16 @@
   width: 100%;
   height: 100%;
   margin: auto;
+  margin-bottom: 10px;
+  color: #6f8093;
 }
 #security-container > #container-head > h3 {
   font-size: 50px;
+  margin-bottom: 10px;
+font-weight: 600;
+letter-spacing: 1.7px;
 }
+
 
 #container-box {
   margin: auto;
@@ -153,30 +161,39 @@
 #compliance {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     background-color: #f5f6fc;
     /* border: 1px solid red; */
   margin: auto;
+  line-height: 30px ;
 }
 .comp {
   display: block;
   justify-content: left;
-  margin-top: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-size: 14px;
+  color: #6f8093;
+  font-weight: 500;
+  letter-spacing: 0.9px;
 }
 .head-comp {
   display: block;
   justify-content: left;
   margin-bottom: 10px;
-  margin-top: 7px;
+
   font-size: 40px;
+  color: #293240;
+  letter-spacing: 00.9px;
+  font-weight: 700;
 }
 #comp-desc p {
     width: 100%;
   font-size: 18px;
   line-height: 23px;
-  letter-spacing: 0.3px;
+  letter-spacing: 1px;
+  color: #6f8093;
+  font-family: 'IBM Plex Sans',sans-serif;
+  
 }
 #top-comp-box {
   display: flex;
@@ -199,9 +216,11 @@
 .comp-div-desc  p{
  color: #293240;   
  font-size: 16px;
- line-height: 19px;
+ line-height: 24px;
  letter-spacing: 0.px;
  font-weight: 400;
+ font-family:  "IBM Plex Sans", sans-serif;
+ color: #293240;
 }
 
 #policy-procedures{
@@ -210,11 +229,11 @@
   padding-bottom: 50px;
 }
 #policy-container{
-    width: 80%;
+    width: 60%;
     margin: auto;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid blue; */
+
 }
 
 #top-parent{
@@ -222,7 +241,7 @@
     flex-direction: column;
     text-align: left;
     justify-content: left;
-    width: 50%;
+    width: 60%;
     padding-bottom:27px;
 }
 
@@ -233,13 +252,17 @@
 }
 
 #second-large-head{
-    font-size: 43px;
+    font-size: 40px;
     margin-bottom: 15px;
+    color: #293240;
+    font-weight: 200;
+    font-family:'IBM Plex Serif',sans-serif;
 }
 #third-desc-head{
     font-size: 28px;
-    width: 80%;   
-    color: #6f8093;  
+    width: 100%;   
+    color: #6f8093; 
+    letter-spacing: 0.9px; 
 }
 #bottom-parent{
     display: grid;
@@ -287,14 +310,23 @@
 #repo-head{
     width: 100%;
     margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
 }
 
+#repo-head{
+  font-family: Barlow,sans-serif;
+  color: #293240;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
 #first-p{
-    width: 100%;
+    width: 110%;
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.5px;
+    font-family: 'Barlow',sans-serif;
 }
 #email-id{
     color:#a676d0;
@@ -307,9 +339,10 @@
     padding-bottom: 96px;
 }
 .last-box{
-    width: 50%;
+    width: 60%;
     margin: auto;
-
+text-align: center;
+justify-content: center;
 }
 .main-container-quote{
     width: 100%;
@@ -319,8 +352,9 @@
     gap: 10px;
 }
 #ready-to-get{
-font-size: 30px;
-margin-bottom:10px;
+font-size: 46px;
+
+font-weight: 500;
 }
 
 #w-layout-grid{
@@ -332,23 +366,166 @@ margin-bottom:10px;
 }
 
 #call{
-    border: 5px solid #9a76d0;
-    color: #9a76d0;
-    font-size: medium;
-    border-radius: 23px;
-    padding: 5px;
+  width: 200px;
+  margin: auto;
+
+  border: 3px solid #9a76d0;
+  background-color: transparent;
+  box-shadow: none;
+  color: #9a76d0;
+  line-height: 22px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 40px;
+  padding: 14px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
 }
 #call:hover{
-    transition: 0.5s;
-    border-color: #7b3fd4;
+    transition:0.5s;
+    border-color: #5f10d4;
+    border: 3px solid #792cee;
+
 }
 #quaote-btn{
-    background-color: #9a76d0;
-    color: white;
-    border-radius: 20px;
-    padding: 9px;
+  width: 200px;
+  margin: auto;
+  border: 3px solid #9a76d0;
+
+  background-color:  #9a76d0;
+  box-shadow: none;
+  color: white;
+  line-height: 22px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 40px;
+  padding: 14px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
 }
 #quaote-btn:hover{
     transition: 0.5s;
-    background-color: #7b3fd4;
+    background-color: #792cee;
+    border: 3px solid #792cee;
+}
+
+/* media queries for large screen and min screen */
+
+
+/* medium screen */
+@media all and (min-width:768px) and (max-width:1024px){
+  .last-box{
+    width: 100%;
+
+}
+.comp-img{
+  padding: 0px ;
+}
+.main-container-quote{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+#w-layout-grid{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+}
+
+/* small screen */
+
+
+@media all and (min-width:320px) and (max-width:767px) {
+  #container-box {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 70%;
+    text-align: center;
+  }
+  #top-comp-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+  }
+  #left-grid-img img {
+  display: none;
+  }
+  .comp-img{
+    padding: 0px ;
+  }
+  #compliance {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+#right-grid-img img {
+  display: none;
+}
+.comp-img{
+  padding: 0px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+#policy-container{
+  width: 90%;
+}
+#top-parent{
+  display: flex;
+  width: 100%;  
+}
+#bottom-parent{
+  grid-template-columns: repeat(1,1fr);
+  width: 100%;
+}
+
+.policy-child-div{
+  display: flex;
+  justify-content: space-around;
+}
+.report-box{
+  width: 80%;
+}
+#repo-head{
+  width: 100%;
+ text-align: center;
+}
+.last-box{
+  width: 100%;
+
+}
+.main-container-quote{
+width: 100%;
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+text-align: center;
+}
+#w-layout-grid{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+text-align: center;
+align-items: center;
+gap: 10px;
+}
+
 }
