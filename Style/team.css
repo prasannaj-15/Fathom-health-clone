@@ -3,11 +3,6 @@
     box-sizing: border-box;
 }
 
-html {
-    
-    height: 100%;
-}
-
 body {
     margin: 0;
     min-height: 100%;
@@ -68,7 +63,7 @@ div {
 
 .section-title {
    text-align: center;
-   border: 1px slid red;
+ 
 }
 
 .heading {
@@ -280,7 +275,7 @@ a {
     text-align: center;
    
     object-fit: none;
-    border: 2px solid red;
+   
 }
 
 .section-title {
