@@ -67,16 +67,19 @@ a {
   text-decoration: none;
   color: #9a76d0;
 }
-body > img {
-  margin-top: -135px;
-  width: 150px;
+#image {
+  z-index: 10000;
+  margin-top: -90px;
+  width: 10%;
   margin-left: 40px;
 }
 #bar {
+  position: relative;
   width: 95%;
+  z-index: -100;
   margin: auto;
   background-color: #f3f5fb;
-  margin-top: -87px;
+  margin-top: -100px;
   color: #6f8093;
   font-size: 30px;
   text-align: center;
@@ -277,6 +280,9 @@ body > img {
     grid-template-columns: repeat(1, 1fr);
     justify-content: space-around;
   }
+  #bar {
+    margin-top: 30px;
+  }
   #animated > div {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -287,7 +293,7 @@ body > img {
     grid-template-columns: repeat(1, 1fr);
     justify-content: space-around;
   }
-  body > img {
+  #image {
     width: 0px;
   }
   #header {
@@ -296,10 +302,18 @@ body > img {
   #last > div {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    text-align: center;
   }
   #lastdiv {
     display: flex;
+    width: 90%;
+
     flex-direction: column;
+    margin: auto;
+  }
+  #lastdiv > h1 {
+    text-align: center;
   }
 }
 .submain {
