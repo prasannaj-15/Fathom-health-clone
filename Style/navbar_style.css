@@ -1,12 +1,19 @@
 li {
   list-style: none;
 }
-a {
+.navbar a,
+.footer a {
   text-decoration: none;
 }
 
 #logoimg {
   max-width: 120px;
+}
+#navbar_container {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 100;
 }
 .navbar {
   display: flex;
@@ -196,6 +203,12 @@ input[type="checkbox"] {
 
 @media (max-width: 768px) {
   /* --Navbr media-- */
+  #navbar_container {
+    position: relative;
+    top: 0;
+    overflow: visible;
+    z-index: 0;
+  }
   .navbar {
     padding: 20px;
   }
@@ -218,7 +231,7 @@ input[type="checkbox"] {
     border-radius: 6px;
     width: 90%;
     margin: auto;
-    margin-top: 5.8%;
+    margin-top: 5.3%;
   }
 
   .menu li:hover {
